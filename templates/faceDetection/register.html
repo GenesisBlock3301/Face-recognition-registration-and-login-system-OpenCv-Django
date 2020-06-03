@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Register Page</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <h3>Register form</h3><br>
+{#    <input type="text" placeholder="Full name"><br>#}
+{#    <input type="number" name="face_id" placeholder="Number"><br>#}
+{#    <input type="text" name="email" id="" placeholder="Email"> <br>#}
+{#    <input type="text" name="phone" placeholder="Phone"><br>#}
+{#    <input type="text" name="job" id="" placeholder="Job"><br>#}
+{#    <input type="text" name="address" placeholder="Address"><br>#}
+{#    <input type="text" name="bio" placeholder="About"><br>#}
+{#    <input type="file" name="dp" accept="image/*" id=""><br>#}
+{#    <input type="submit" value="Register"><br>#}
+{#    <input type="reset" value="Clear">#}
+    {{ form.as_p }}
+    <input type="submit" value="Register"><br>
+    <input type="reset" value="Clear">
+</form>
+</body>
+</html>
